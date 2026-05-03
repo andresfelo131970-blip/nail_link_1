@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Link - Inicio</title>
+    <link rel="stylesheet"  href="slider.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root {
+            --primary: #cdb4ff;   /* Color principal */
+            --text-dark: #333;
+            --text-light: #666;
+            --gray: #e6e6e6;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff;
+        }
+
+        /* HEADER */
+        header {
+            width: 100%;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+        }
+
+        .logo img {
+            width: 110px;
+            animation: fadeLogo 3s infinite alternate;
+        }
+
+        @keyframes fadeLogo {
+            from { opacity: 0.6; }
+            to { opacity: 1; }
+        }
+
+        .socials span {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background: gray;
+            border-radius: 50%;
+            margin-left: 8px;
+        }
+
+        /* MENU */
+        nav {
+            background: white;
+            border-top: 2px solid var(--primary);
+            border-bottom: 2px solid var(--primary);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            list-style: none;
+            padding: 10px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            color: var(--text-dark);
+        }
+
+        nav ul li:hover {
+            color: var(--primary);
+        }
+
+        /* SLIDER */
+        .slider {
+            width: 100%;
+            height: 350px;
+            background: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-dark);
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .dots {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dots span {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: gray;
+            border-radius: 50%;
+            margin: 3px;
+        }
+
+        /* NOTICIAS */
+        .news {
+            padding: 40px 60px;
+        }
+
+        .news h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .news-card {
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 170px;
+            background: #ddd;
+            transition: opacity 0.3s;
+        }
+
+        .news-card:hover img {
+            opacity: 0.6;
+        }
+
+        .news-card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .news-card p {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* GOOGLE MAPS */
+        .footer-section {
+            margin-top: 40px;
+            padding: 40px 60px;
+            border-top: 2px solid var(--primary);
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .footer-text {
+            width: 50%;
+        }
+
+        .footer-map {
+            width: 50%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 250px;
+            border: 0;
+        }
+
+        footer{
+            font-family: sans-serif;
+        }
+
+        .footer-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img width="1000" src="img/LOGO.png" alt="Logo Nail Link">
+            </div>
+
+            <div class="socials">
+                <a target="_blank" href="https://www.instagram.com/">
+                   <img src="img/instagam_109863.ico" alt="instagram" width="30px">
+                </a>
+                <a target="_blank" href="https://www.facebook.com/">
+                   <img src="img/facebook_109862.ico" alt="facebook" width="30px">
+                </a>
+                <a target="_blank" href="https://www.whatsapp.com/">
+                   <img src="img/whatsapp_109861.ico" alt="whatsapp" width="30px">
+                </a>
+                <a target="" href="https://www.tiktok.com/">
+                   <img src="img/tiktok_logo_icon_186928.ico" alt="tiktok" width="30px">
+                </a>
+                <span></span>
+            </div>
+            <div>
+                <a target="_blank" href="Login.html" class="boton">Iniciar Sesión</a>
+            </div>
+        </div>
+
+        <!-- MENU -->
+        <nav>
+            <ul>
+                <li>INICIO</li>
+                <li>QUIENES SOMOS</li>
+                <li>SERVICIOS</li>
+                <li>SALONES DE SPA</li>
+                <li>NOTICIAS</li>
+                <li>CONTACTANOS</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SLIDER -->
+    <section class="slider">
+        
+    <span></span><span></span><span></span>
+    <div class="slider-conteiner">
+        <div class="slider position"></div>
+    </div>
+    
+    </section>
+
+    <!-- NOTICIAS -->
+    <section class="news">
+        <h2>Noticias</h2>
+
+        <div class="news-grid">
+            <div class="news-card">
+                <img src="img/sede.jpg"> 
+                <h3>Nueva Apertura ¡Estamos creciendo para ti!</h3>
+                <p>En Nail Link abrimos una nueva sede para estar más cerca de ti. Un espacio renovado, cómodo y pensado para ofrecerte una experiencia única en cuidado de uñas y bienestar personal</p>
+                    <p>Te esperamos con nuevos servicios, más disponibilidad de citas y un equipo especializado que cuida cada detalle.</p>
+                
+            </div>
+
+            <div class="news-card">
+                <img src="img/somos.jpg">
+                <h3>Conócenos</h3>
+                <p>Somos Nail Link, un SPA de uñas que combina tecnología y bienestar para ofrecerte un servicio ágil, seguro y de calidad.</p>
+                <p>Nos apasiona transformar tu tiempo de cuidado en un momento especial, por eso trabajamos con profesionales capacitados, productos de alta calidad y una plataforma digital que facilita tus reservas y tu experiencia.</p>
+                <p>En Nail Link creemos que la belleza también es comodidad, por eso estamos a un clic de distancia. Tu bienestar es nuestro principal enlace</p>
+            </div>
+
+            <div class="news-card">
+                <img src="img/contactanos.jpg">
+                <h3>Contáctanos</h3>
+                <p>¿Tienes dudas, solicitudes o quieres agendar una cita?</p>
+                <p>Estamos para ti.</p>
+                <hr>
+                <p>Teléfono / WhatsApp: 3001234567</p>
+                <hr>
+                <p>Correo: contacto@naillink.com</p>
+                <hr>
+                <p>Dirección: Cra 1 # 1 - 1, Medellin</p>
+                <hr>
+                <p>Horario de atención: Lunes a sábado, 8:00 a.m. a 6:00 p.m.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GOOGLE MAPS -->
+    <section class="footer-section">
+        <div class="footer-container">
+            <div class="footer-text">
+                <p>
+                    <h2>Conoce Nuestras Sedes</h2>
+                <hr>
+                <p>Medellin: Cra 1 # 1 - 1</p>
+                <hr>
+                <p>Bogota : Cra 1 # 1 - 1</p>
+                <hr>
+                <p>Cali : Cra 1 # 1 - 1</p>
+                <hr>
+                <p>Barranquilla : Cra 1 # 1 - 1</p>
+                <hr>
+            </div>
+
+            <div class="footer-map">
+                <iframe src="https://maps.google.com/maps?q=Bogota&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+            </div>
+        </div>
+    </section> 
+
+    <footer></footer>
+        <section class="footer-section">
+            <div class="footer-container">
+                <div class="footer-text">
+                    <p class="centrarTexto">
+                        <h2>SERVICIO NACIONAL DE APRENDIZAJE SENA</h2>
+                    </p>
+                    <hr>
+                    <h3>Andres Felipe Riaño Cuartas</h3>
+                    <hr>
+                    <p>Análisis y desarrollo de software</p>
+                    <p>Ficha: 3186648 </p>
+                </div>
+            </div>
+        </section> 
+    </footer> 
+     
+</body>
+</html>

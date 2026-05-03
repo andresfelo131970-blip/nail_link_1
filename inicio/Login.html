@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Link - Login</title>
+
+    <style>
+        :root {
+            --primary: #cdb4ff;   /* Lila suave */
+            --button: #9a6bff;    /* Morado */
+            --text-dark: #333;
+            --text-light: #777;
+            --bg: #fefcf6;        /* Fondo crema claro */
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .container {
+            width: 85%;
+            height: 80vh;
+            background: white;
+            border-radius: 20px;
+            display: flex;
+            overflow: hidden;
+            border: 1px solid #e8e8e8;
+        }
+
+        /* LATERAL */
+        .sidebar {
+            width: 25%;
+            background: var(--primary);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar img {
+            width: 120px;
+            margin-bottom: 40px;
+        }
+
+        .sidebar a {
+            display: block;
+            margin: 15px 0;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 18px;
+        }
+
+        .sidebar a:hover {
+            font-weight: bold;
+        }
+
+        /* FORMULARIO LOGIN */
+        .login-area {
+            width: 75%;
+            padding: 60px;
+        }
+
+        .login-area h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
+            color: var(--text-dark);
+        }
+
+        .form-control {
+            width: 70%;
+            padding: 18px;
+            border-radius: 15px;
+            border: 1px solid #ddd;
+            margin-bottom: 25px;
+            font-size: 16px;
+            outline: none;
+            background: #fafafa;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+        }
+
+        .btn {
+            width: 70%;
+            padding: 18px;
+            background: var(--button);
+            color: white;
+            font-size: 20px;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LATERAL -->
+        <div class="sidebar">
+            <img src="img/LOGO.png" alt="Nail Link Logo">
+
+            <a href="#">Clientes</a>
+            <a href="#">Citas</a>
+            <a href="#">Servicios</a>
+        </div>
+
+        <!-- LOGIN -->
+        <div class="login-area">
+            <h1>Login</h1>
+
+            <input type="email" class="form-control" placeholder="Email">
+            <input type="password" class="form-control" placeholder="Password">
+
+            <button class="btn">Log In</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+
+.slider {
+    background-image: url(slider/spa1.jpg);
+    background-size: cover;
+    height: 10%;
+    width: 10%;
+    border-radius: 10px;
+    animation: animate 10s infinite
+}
+
+@keyframes animate{
+    20%{
+        background-image: url(slider/spa3.jpg);
+        background-size: cover;
+    }
+    40%{
+        background-image: url(slider/spa2.jpg);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(slider/spa1.jpg);
+        background-size: cover;
+    }
+}
