@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Link - Panel</title>
+
+    <style>
+        :root {
+            --bg-light: #fff0f5;
+            --button-main: #f4a2bd;
+            --text-dark: #4a4a4a;
+            --white: #ffffff;
+            --shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-light);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+        }
+
+        .construction-card {
+            background: var(--white);
+            width: 80%;
+            max-width: 700px;
+
+            padding: 50px;
+            border-radius: 30px;
+
+            text-align: center;
+
+            box-shadow: var(--shadow);
+        }
+
+        .construction-card img {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--button-main);
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--text-dark);
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .user-box {
+            margin-top: 30px;
+            background-color: #fdf2f7;
+            padding: 15px;
+            border-radius: 15px;
+            font-weight: bold;
+            color: var(--text-dark);
+        }
+
+        .btn-home {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: var(--button-main);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-home:hover {
+            background-color: #f08da5;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="construction-card">
+
+        <img src="img/LOGO.png" alt="Logo Nail Link">
+
+        <h1>Próximamente</h1>
+
+        <h2>🚧 Estamos en construcción 🚧</h2>
+
+        <p>
+            Estamos trabajando para ofrecer una mejor experiencia
+            dentro de la plataforma Nail Link.
+        </p>
+
+        <p>
+            Muy pronto podrás acceder a nuevas funcionalidades
+            para la gestión de tu spa y clientes.
+        </p>
+
+        <div class="user-box">
+            Bienvenido usuario: <span id="usuario">Administrador</span>
+        </div>
+
+        <a href="index.html" class="btn-home">
+            Volver al inicio
+        </a>
+
+    </div>
+
+</body>
+</html>
